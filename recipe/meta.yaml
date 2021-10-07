@@ -1,5 +1,5 @@
 {% set name = "pyprocessmacro" %}
-{% set version = "1.0.9" %}
+{% set version = "1.0.11" %}
 
 
 package:
@@ -8,13 +8,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyProcessMacro-{{ version }}.tar.gz
-  sha256: e7c0ef2383b72ed45b596a3e3c7686e2b08463a4965b3671f043bc4d5ef9cf8c
+  sha256: 7b97a754433b5ca44676622c8b9a4d8ca0c13c25077858de2ba82882407f681f
 
 build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  
+
 requirements:
   host:
     - pip
@@ -24,7 +24,7 @@ requirements:
     - scipy
     - seaborn
     - matplotlib-base
-  
+
   run:
     - matplotlib-base
     - {{ pin_compatible('numpy') }}
