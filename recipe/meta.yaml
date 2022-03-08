@@ -1,5 +1,5 @@
 {% set name = "pyprocessmacro" %}
-{% set version = "1.0.11" %}
+{% set version = "1.0.12" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyProcessMacro-{{ version }}.tar.gz
-  sha256: 7b97a754433b5ca44676622c8b9a4d8ca0c13c25077858de2ba82882407f681f
+  sha256: a8728a8c150e7d4fc06fd2cf374ce75f9fd2ded3287c4a1a0c703341fa68de15
 
 build:
   number: 0
